@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaInfinity - AI Ecosystem for the Future</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Lucide Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/lucide@latest">
+</head>
+<body>
+    <!-- ============= HERO SECTION ============= -->
+    <section class="hero" id="hero">
+        <!-- Hyperspeed Background Canvas -->
+        <div class="hyperspeed-container">
+            <canvas id="hyperspeed-canvas"></canvas>
+        </div>
+
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Grid Background Pattern -->
+        <div class="grid-background"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="badge fade-in-up" style="animation-delay: 0.2s">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="zap-icon">
+                    <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
+                </svg>
+                <span>The Future of Learning is AI-Powered</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="hero-headline fade-in-up" style="animation-delay: 0.4s">
+                GigaInfinity
+                <span class="gradient-text">AI Ecosystem</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="hero-subheading fade-in-up" style="animation-delay: 0.6s">
+                India's most powerful AI-powered life ecosystem. Learn. Create. Automate. Grow. Evolve with AI.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons fade-in-up" style="animation-delay: 0.8s">
+                <button class="btn btn-primary">
+                    <span>Start Your Journey</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="7 17 17 7"></polyline>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <span>Watch Demo</span>
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-container fade-in-up" style="animation-delay: 1s">
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">AI Ecosystems</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100M+</div>
+                    <div class="stat-label">Potential Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">AI Tools</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============= ECOSYSTEM SECTION ============= -->
+    <section class="ecosystem-section" id="ecosystem">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-kicker">// The Ecosystem</p>
+                <h2 class="section-title">
+                    Seven Powerful
+                    <span class="gradient-text">AI Ecosystems</span>
+                </h2>
+                <p class="section-description">
+                    Each ecosystem is purpose-built to solve real problems and help humans level up in real life.
+                </p>
+            </div>
+
+            <!-- Ecosystem Grid -->
+            <div class="ecosystem-grid">
+                <!-- MENTRA Card -->
+                <div class="ecosystem-card" data-color="red">
+                    <div class="card-icon mentra-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow red"></div>
+                    <h3 class="card-title">MENTRA</h3>
+                    <p class="card-description">India's future AI classroom ecosystem for next-gen learning</p>
+                    <div class="card-features">
+                        <span class="feature-tag red">AI Avatar Teachers</span>
+                        <span class="feature-tag red">Voice Interaction</span>
+                        <span class="feature-tag red">Emotional Learning</span>
+                        <span class="feature-tag red">Smart Revision</span>
+                    </div>
+                </div>
+
+                <!-- Creator AI Card -->
+                <div class="ecosystem-card" data-color="blue">
+                    <div class="card-icon creator-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <div class="card-glow blue"></div>
+                    <h3 class="card-title">Creator AI</h3>
+                    <p class="card-description">Empower creators with intelligent automation tools</p>
+                    <div class="card-features">
+                        <span class="feature-tag blue">Script Generator</span>
+                        <span class="feature-tag blue">Auto Captions</span>
+                        <span class="feature-tag blue">Content Repurposing</span>
+                        <span class="feature-tag blue">Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Health & Fitness Card -->
+                <div class="ecosystem-card" data-color="purple">
+                    <div class="card-icon health-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow purple"></div>
+                    <h3 class="card-title">Health & Fitness</h3>
+                    <p class="card-description">Transform physique and wellness with AI coaching</p>
+                    <div class="card-features">
+                        <span class="feature-tag purple">AI Gym Coach</span>
+                        <span class="feature-tag purple">Nutrition Planning</span>
+                        <span class="feature-tag purple">Habit Tracking</span>
+                        <span class="feature-tag purple">Sleep Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Mental Wellness Card -->
+                <div class="ecosystem-card" data-color="red">
+                    <div class="card-icon wellness-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H7.81C7.4 7.83 4.78 5.4 1.5 5.4c-2.49 0-4.5 2.01-4.5 4.5S-0.99 14.4 1.5 14.4c3.28 0 5.9-2.43 6.31-5.6H9M17 11h1.19c.41 3.17 3.03 5.6 6.31 5.6 2.49 0 4.5-2.01 4.5-4.5s-2.01-4.5-4.5-4.5c-3.28 0-5.9 2.43-6.31 5.6H17M9 15H4.5c-1.93 0-3.5 1.57-3.5 3.5S2.57 22 4.5 22H9"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow red"></div>
+                    <h3 class="card-title">Mental Wellness</h3>
+                    <p class="card-description">Support focus, stress management, and emotional health</p>
+                    <div class="card-features">
+                        <span class="feature-tag red">Motivational AI</span>
+                        <span class="feature-tag red">Focus Assistant</span>
+                        <span class="feature-tag red">Breathing Exercises</span>
+                        <span class="feature-tag red">Journaling</span>
+                    </div>
+                </div>
+
+                <!-- Business & Earning Card -->
+                <div class="ecosystem-card" data-color="blue">
+                    <div class="card-icon business-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow blue"></div>
+                    <h3 class="card-title">Business & Earning</h3>
+                    <p class="card-description">Launch and scale online businesses with AI assistance</p>
+                    <div class="card-features">
+                        <span class="feature-tag blue">Startup Assistant</span>
+                        <span class="feature-tag blue">Automation Systems</span>
+                        <span class="feature-tag blue">Business Planner</span>
+                        <span class="feature-tag blue">CRM</span>
+                    </div>
+                </div>
+
+                <!-- Automation Card -->
+                <div class="ecosystem-card" data-color="purple">
+                    <div class="card-icon automation-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow purple"></div>
+                    <h3 class="card-title">Automation</h3>
+                    <p class="card-description">Eliminate repetitive work with intelligent workflows</p>
+                    <div class="card-features">
+                        <span class="feature-tag purple">WhatsApp Automation</span>
+                        <span class="feature-tag purple">Email Systems</span>
+                        <span class="feature-tag purple">Smart Reminders</span>
+                        <span class="feature-tag purple">No-Code</span>
+                    </div>
+                </div>
+
+                <!-- Digital Literacy Card -->
+                <div class="ecosystem-card" data-color="red">
+                    <div class="card-icon literacy-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-glow red"></div>
+                    <h3 class="card-title">Digital Literacy</h3>
+                    <p class="card-description">Accessible tech education for everyone, everywhere</p>
+                    <div class="card-features">
+                        <span class="feature-tag red">Voice Assistant</span>
+                        <span class="feature-tag red">Local Language</span>
+                        <span class="feature-tag red">Mobile Guides</span>
+                        <span class="feature-tag red">Smart Tutorials</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FEATURES SECTION ============= -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <p class="section-kicker">// Vision 2030</p>
+                <h2 class="section-title">Our Mission</h2>
+                <p class="section-description large">
+                    Build India's most powerful AI-powered life ecosystem where humans can learn, create, automate, grow, and improve their daily lives through breakthrough AI technology.
+                </p>
+            </div>
+
+            <!-- Feature Highlights -->
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-emoji">🧠</div>
+                    <h3>AI-First Architecture</h3>
+                    <p>Built on cutting-edge LLMs from OpenAI, Gemini, and Claude APIs</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-emoji">💳</div>
+                    <h3>Subscription & SaaS Model</h3>
+                    <p>Scalable revenue through premium features and enterprise solutions</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-emoji">❤️</div>
+                    <h3>Emotional Intelligence</h3>
+                    <p>3D/2D avatars with emotional AI for human-centric learning</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-emoji">🌍</div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Accessible to Gen Z, Gen Alpha, and underserved populations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= CTA SECTION ============= -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <h2>Ready to Evolve with AI?</h2>
+                <p>Join millions of students, creators, entrepreneurs, and innovators who are shaping the future with GigaInfinity.</p>
+                <button class="btn btn-cta">
+                    <span>Claim Your Spot Today</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="7 17 17 7"></polyline>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FOOTER ============= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#mentra">Mentra</a></li>
+                        <li><a href="#creator">Creator AI</a></li>
+                        <li><a href="#business">Business Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#discord">Discord</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    <h4 class="gradient-text">GigaInfinity ♾️</h4>
+                    <p>AI Ecosystem Division of GigaMerge Studio</p>
+                </div>
+                <p>© 2026 GigaInfinity. Evolving humanity with AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
